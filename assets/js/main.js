@@ -361,7 +361,7 @@ function addJSONLDScript() {
           "@type": "Organization",
           "name": "AlgoScript Software Pvt. Ltd.",
           "url": "https://algoscript.clustersofttech.com",
-          "logo": "https://www.algoscript.in/assets/img/algo_scrpit_logo.svg",
+          "logo": "https://www.algoscript.in/assets/img/viha_softtech.png",
           "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+91 95123 96168",
