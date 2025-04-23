@@ -239,9 +239,10 @@ section {
   padding: 20px 0;
 }
 .header.header-scrolled {
-  background: #fff;
+  background: #F2F5FC;
   /* padding: 15px 0; */
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  border-radius: 14px;
 }
 .header .logo {
   line-height: 0;
@@ -482,7 +483,7 @@ section {
   width: 100%;
   height: 100vh;
   /* padding: 278px 0; */
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background:url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
 }
 .hero h1 {
@@ -2179,11 +2180,12 @@ section {
   background: #5969f3;
 }
 .footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
+  background: #F2F5FC url(../img/footer-bg.png) no-repeat right top;
   background-size: contain;
   border-top: 1px solid #e1ecff;
   border-bottom: 1px solid #e1ecff;
   padding: 60px 0 30px 0;
+  font-weight: 700;
 }
 @media (max-width: 992px) {
   .footer .footer-top {

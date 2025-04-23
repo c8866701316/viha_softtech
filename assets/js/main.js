@@ -359,12 +359,12 @@ function addJSONLDScript() {
       "@type": "WebPage",
       "mainEntity": {
           "@type": "Organization",
-          "name": "AlgoScript Software Pvt. Ltd.",
+          "name": "Viha SoftTech",
           "url": "https://algoscript.clustersofttech.com",
           "logo": "https://www.algoscript.in/assets/img/viha_softtech.png",
           "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+91 95123 96168",
+              "telephone": "+91 94266 80224",
               "contactType": "Customer Service",
               "email": "info@aloscript.in",
               "areaServed": "IN",
