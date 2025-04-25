@@ -1,0 +1,49 @@
+; RewriteEngine On
+; RewriteBase /
+
+; # Root Pages
+; RewriteRule ^$ index.html [L]
+; RewriteRule ^about$ about.html [L]
+; RewriteRule ^our-work$ our-work.html [L]
+; RewriteRule ^career$ career.html [L]
+; RewriteRule ^contact$ contact.html [L]
+
+; # Services Pages
+; RewriteRule ^services/web-development$ /services/web-development.html [L]
+; RewriteRule ^services/mobile-development$ ../services/mobile-development.html [L]
+; RewriteRule ^services/design$ ../services/design.html [L]
+; RewriteRule ^services/seo$ ../services/seo.html [L]
+
+; # Technologies Pages
+; RewriteRule ^technologies/asp-net$ technologies/asp-net.html [L]
+; RewriteRule ^technologies/database$ technologies/database.html [L]
+; RewriteRule ^technologies/mean$ technologies/mean.html [L]
+; RewriteRule ^technologies/mern$ technologies/mern.html [L]
+; RewriteRule ^technologies/meteor$ technologies/meteor.html [L]
+; RewriteRule ^technologies/reporting$ technologies/reporting.html [L]
+
+; # Hire Us Pages
+; RewriteRule ^hire-us/hire-asp-net$ hire-us/hire-asp-net.html [L]
+; RewriteRule ^hire-us/hire-dbms$ hire-us/hire-dbms.html [L]
+; RewriteRule ^hire-us/hire-mean$ hire-us/hire-mean.html [L]
+; RewriteRule ^hire-us/hire-mern$ hire-us/hire-mern.html [L]
+; RewriteRule ^hire-us/hire-meteor$ hire-us/hire-meteor.html [L]
+; RewriteRule ^hire-us/hire-reporting$ hire-us/hire-reporting.html [L]
+
+; # Redirect .html URLs to extensionless URLs
+; RewriteCond %{REQUEST_URI} ^(.*)\.html$ [NC]
+; RewriteRule ^(.*)\.html$ $1 [L,R=301]
+
+; # Prevent processing if the request is for an existing file or directory
+; RewriteCond %{REQUEST_FILENAME} !-f
+; RewriteCond %{REQUEST_FILENAME} !-d
+RewriteEngine On
+
+# Remove .html extension (301 redirect)
+RewriteCond %{THE_REQUEST} \.html [NC]
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# Internally add .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
